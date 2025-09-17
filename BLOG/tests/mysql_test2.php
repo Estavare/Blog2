@@ -5,9 +5,10 @@ require_once '../core/conexao_mysql.php';
 require_once '../core/sql.php';
 require_once '../core/mysql.php';
 
-insert_teste('cassio', 'cassio@gmail.com', '12312344567');
+insert_teste('Esther', 'a@gmail.com', 'a');
 buscar_teste();
-update_teste(2, 'cassio','adm@gmail');
+
+
 
 // Teste inserção banco de dados
 function insert_teste($nome, $email, $senha): void

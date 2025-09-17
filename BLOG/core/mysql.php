@@ -3,7 +3,7 @@
 function insere(string $entidade, array $dados): bool
 {
     $retorno = false;
-
+    
     foreach ($dados as $campo => $dado) {
         $coringa[$campo] = '?';
         $tipo[] = gettype($dado)[0];
@@ -13,6 +13,7 @@ function insere(string $entidade, array $dados): bool
     $instrucao = insert($entidade, $coringa);
 
     $conexao = conecta();
+    
 
     $stmt = mysqli_prepare($conexao, $instrucao);
 
