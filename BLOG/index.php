@@ -14,7 +14,7 @@
     </div>
 
     <!-- Menu -->
-    <div class="row" style="min-height: 500px;">
+    <div class="row" style="min-height: 50px;">
         <div class="col-md-12">
             <?php include 'includes/menu.php'; ?>
         </div>
@@ -37,7 +37,7 @@
         }
 
         $data_atual = date('Y-m-d H:i:s');
-
+        print_r($data_atual);
         $criterio = [
             ['data_postagem', '<=', $data_atual]
         ];
