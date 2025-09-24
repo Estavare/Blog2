@@ -4,7 +4,7 @@ require_once '../includes/funcoes.php';
 require_once 'conexao_mysql.php';
 require_once 'sql.php';
 require_once 'mysql.php';
-$salt = '$exemplosaltifsp';
+$salt = '321';
 
 foreach ($_POST as $indice => $dado) {
     $$indice = limparDados($dado);
@@ -122,8 +122,7 @@ case 'update':
         exit;
         break;
     }
-    header('Location: ../index.php');
-    ?>
+   header('Location: ../index.php');
+?>
     
 
-?>
