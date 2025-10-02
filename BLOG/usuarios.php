@@ -18,7 +18,9 @@
                 include 'includes/rodape.php';
                 exit;
             }
+            
             ?>
+             
         </div>
     </div>
     <div class="row" style="min-height: 500px;">
